@@ -6,8 +6,11 @@ dash_component_template
 .. image:: https://img.shields.io/pypi/v/dash_component_template.svg
         :target: https://pypi.python.org/pypi/dash_component_template
 
+.. image:: https://img.shields.io/badge/gh--pages-doc-brightgreen
+        :target: https://toltec-astro.github.io/dash_component_template
 
-.. image:: https://github.com/toltec-astro/dash_component_template/actions/workflows/ci_tests/badge.svg
+.. image:: https://github.com/toltec-astro/dash_component_template/actions/workflows/ci_tests.yml/badge.svg
+        :target: https://github.com/toltec-astro/dash_component_template/actions/workflows/ci_tests.yml
 
 
 A framework to create reusable Dash layout.
