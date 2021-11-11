@@ -12,6 +12,9 @@ dash_component_template
 .. image:: https://github.com/toltec-astro/dash_component_template/actions/workflows/ci_tests.yml/badge.svg
         :target: https://github.com/toltec-astro/dash_component_template/actions/workflows/ci_tests.yml
 
+.. image:: https://codecov.io/gh/toltec-astro/dash_component_template/branch/main/graph/badge.svg?token=4Z2P2IPL1U
+      :target: https://codecov.io/gh/toltec-astro/dash_component_template
+
 
 A framework to create reusable Dash layout.
 
