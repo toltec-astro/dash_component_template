@@ -1,0 +1,14 @@
+pip
+wheel
+bump2version==0.5.11
+watchdog==0.9.0
+flake8==3.7.8
+tox
+coverage==4.5.4
+Sphinx
+sphinx-automodapi
+docutils<0.18
+twine==1.14.0
+mkdocs
+pytest==6.2.4
+
