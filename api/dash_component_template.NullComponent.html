@@ -17,6 +17,8 @@
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="IdTreeMeta" href="dash_component_template.idtree.IdTreeMeta.html" />
+    <link rel="prev" title="WrappedComponent" href="dash_component_template.WrappedComponent.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -38,7 +40,7 @@
 <dl class="class">
 <dt id="dash_component_template.NullComponent">
 <em class="property">class </em><code class="descclassname">dash_component_template.</code><code class="descname">NullComponent</code><span class="sig-paren">(</span><em>id</em>, <em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/dash_component_template/template.html#NullComponent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dash_component_template.NullComponent" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="../dash_component_template.html#dash_component_template.template.Template" title="dash_component_template.template.Template"><code class="xref py py-class docutils literal notranslate"><span class="pre">dash_component_template.template.Template</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="dash_component_template.template.Template.html#dash_component_template.template.Template" title="dash_component_template.template.Template"><code class="xref py py-class docutils literal notranslate"><span class="pre">dash_component_template.template.Template</span></code></a></p>
 <p>A component template that does not represent an actual component.</p>
 <p>This is useful to serve as a root to build standalone layout that does not
 attached immediately to the main Dash app layout tree.</p>
@@ -49,13 +51,13 @@ attached immediately to the main Dash app layout tree.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="../dash_component_template.html#dash_component_template.NullComponent.id" title="dash_component_template.NullComponent.id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#dash_component_template.NullComponent.id" title="dash_component_template.NullComponent.id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id</span></code></a></td>
 <td>The unique id.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="../dash_component_template.html#dash_component_template.NullComponent.idbase" title="dash_component_template.NullComponent.idbase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">idbase</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#dash_component_template.NullComponent.idbase" title="dash_component_template.NullComponent.idbase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">idbase</span></code></a></td>
 <td>The base name to use for generated unique id.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="../dash_component_template.html#dash_component_template.NullComponent.layout" title="dash_component_template.NullComponent.layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">layout</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#dash_component_template.NullComponent.layout" title="dash_component_template.NullComponent.layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">layout</span></code></a></td>
 <td>Implement this to return a valid Dash layout object.</td>
 </tr>
 </tbody>
@@ -67,7 +69,7 @@ attached immediately to the main Dash app layout tree.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="../dash_component_template.html#dash_component_template.NullComponent.setup_layout" title="dash_component_template.NullComponent.setup_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setup_layout</span></code></a>(app)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#dash_component_template.NullComponent.setup_layout" title="dash_component_template.NullComponent.setup_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setup_layout</span></code></a>(app)</td>
 <td>Implement this to declare layout components and their callbacks.</td>
 </tr>
 </tbody>
@@ -138,11 +140,15 @@ way:</p>
 
 <h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../readme.html">dash_component_template</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modules.html">dash_component_template</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../modules.html">API references</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../modules.html#module-dash_component_template">dash_component_template Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#module-dash_component_template.idtree">dash_component_template.idtree Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#module-dash_component_template.template">dash_component_template.template Module</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../authors.html">Credits</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../history.html">History</a></li>
@@ -152,6 +158,10 @@ way:</p>
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../modules.html">API references</a><ul>
+      <li>Previous: <a href="dash_component_template.WrappedComponent.html" title="previous chapter">WrappedComponent</a></li>
+      <li>Next: <a href="dash_component_template.idtree.IdTreeMeta.html" title="next chapter">IdTreeMeta</a></li>
+  </ul></li>
   </ul></li>
 </ul>
 </div>

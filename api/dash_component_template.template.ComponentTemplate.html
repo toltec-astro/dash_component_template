@@ -17,6 +17,8 @@
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="DashComponentInfo" href="dash_component_template.template.DashComponentInfo.html" />
+    <link rel="prev" title="WrappedComponent" href="dash_component_template.template.WrappedComponent.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -38,19 +40,19 @@
 <dl class="class">
 <dt id="dash_component_template.template.ComponentTemplate">
 <em class="property">class </em><code class="descclassname">dash_component_template.template.</code><code class="descname">ComponentTemplate</code><span class="sig-paren">(</span><em>*args</em>, <em>parent=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/dash_component_template/template.html#ComponentTemplate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dash_component_template.template.ComponentTemplate" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="../dash_component_template.html#dash_component_template.template.Template" title="dash_component_template.template.Template"><code class="xref py py-class docutils literal notranslate"><span class="pre">dash_component_template.template.Template</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">dash_component_template.template.ComponentFactoryMixin</span></code></p>
+<dd><p>Bases: <a class="reference internal" href="dash_component_template.template.Template.html#dash_component_template.template.Template" title="dash_component_template.template.Template"><code class="xref py py-class docutils literal notranslate"><span class="pre">dash_component_template.template.Template</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">dash_component_template.template.ComponentFactoryMixin</span></code></p>
 <p>A component class for Dash component type.</p>
 <p>Instances of this class is typically created from calling the
-<a class="reference internal" href="../dash_component_template.html#dash_component_template.template.Template.child" title="dash_component_template.template.Template.child"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Template.child()</span></code></a> method, which allows declaring a tree
+<a class="reference internal" href="dash_component_template.template.Template.html#dash_component_template.template.Template.child" title="dash_component_template.template.Template.child"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Template.child()</span></code></a> method, which allows declaring a tree
 of components with automatic unique ids.</p>
 <p>Subclasses of this class that wraps a single Dash component class
 is typically created automatically when used by the <code class="xref py py-meth docutils literal notranslate"><span class="pre">child()</span></code> call.
 Instances of these classes serves as a lazy evaluation proxy around the
 native Dash component class. Dash component properties on the template
 instance are passed to the Dash component class constructor when the
-<a class="reference internal" href="../dash_component_template.html#dash_component_template.template.ComponentTemplate.layout" title="dash_component_template.template.ComponentTemplate.layout"><code class="xref py py-attr docutils literal notranslate"><span class="pre">layout</span></code></a> property is queried.</p>
+<a class="reference internal" href="#dash_component_template.template.ComponentTemplate.layout" title="dash_component_template.template.ComponentTemplate.layout"><code class="xref py py-attr docutils literal notranslate"><span class="pre">layout</span></code></a> property is queried.</p>
 <p>User code can define subclass of this class that implement the
-<a class="reference internal" href="../dash_component_template.html#dash_component_template.template.ComponentTemplate.setup_layout" title="dash_component_template.template.ComponentTemplate.setup_layout"><code class="xref py py-meth docutils literal notranslate"><span class="pre">setup_layout()</span></code></a> method, in which a set of interrelated Dash components
+<a class="reference internal" href="#dash_component_template.template.ComponentTemplate.setup_layout" title="dash_component_template.template.ComponentTemplate.setup_layout"><code class="xref py py-meth docutils literal notranslate"><span class="pre">setup_layout()</span></code></a> method, in which a set of interrelated Dash components
 and their related callbacks can be defined. Such class acts as a “template”
 and one can use of multiple instances of it in a single page application,
 without the need to worrying about possible confliction in the ids.</p>
@@ -61,16 +63,16 @@ without the need to worrying about possible confliction in the ids.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="../dash_component_template.html#dash_component_template.template.ComponentTemplate.children" title="dash_component_template.template.ComponentTemplate.children"><code class="xref py py-obj docutils literal notranslate"><span class="pre">children</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#dash_component_template.template.ComponentTemplate.children" title="dash_component_template.template.ComponentTemplate.children"><code class="xref py py-obj docutils literal notranslate"><span class="pre">children</span></code></a></td>
 <td>All child nodes.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="../dash_component_template.html#dash_component_template.template.ComponentTemplate.dash_component_info" title="dash_component_template.template.ComponentTemplate.dash_component_info"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dash_component_info</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#dash_component_template.template.ComponentTemplate.dash_component_info" title="dash_component_template.template.ComponentTemplate.dash_component_info"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dash_component_info</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="../dash_component_template.html#dash_component_template.template.ComponentTemplate.layout" title="dash_component_template.template.ComponentTemplate.layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">layout</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#dash_component_template.template.ComponentTemplate.layout" title="dash_component_template.template.ComponentTemplate.layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">layout</span></code></a></td>
 <td>The layout generated from traversing the component tree.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="../dash_component_template.html#dash_component_template.template.ComponentTemplate.parent" title="dash_component_template.template.ComponentTemplate.parent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parent</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#dash_component_template.template.ComponentTemplate.parent" title="dash_component_template.template.ComponentTemplate.parent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parent</span></code></a></td>
 <td>Parent Node.</td>
 </tr>
 </tbody>
@@ -82,10 +84,10 @@ without the need to worrying about possible confliction in the ids.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="../dash_component_template.html#dash_component_template.template.ComponentTemplate.set_wildcard_prop" title="dash_component_template.template.ComponentTemplate.set_wildcard_prop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_wildcard_prop</span></code></a>(name,&nbsp;value)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#dash_component_template.template.ComponentTemplate.set_wildcard_prop" title="dash_component_template.template.ComponentTemplate.set_wildcard_prop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_wildcard_prop</span></code></a>(name,&nbsp;value)</td>
 <td>Set the wildcard props of the component.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="../dash_component_template.html#dash_component_template.template.ComponentTemplate.setup_layout" title="dash_component_template.template.ComponentTemplate.setup_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setup_layout</span></code></a>(app)</td>
+<tr class="row-even"><td><a class="reference internal" href="#dash_component_template.template.ComponentTemplate.setup_layout" title="dash_component_template.template.ComponentTemplate.setup_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setup_layout</span></code></a>(app)</td>
 <td>Implement this to declare layout components and their callbacks.</td>
 </tr>
 </tbody>
@@ -246,11 +248,15 @@ way:</p>
 
 <h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../readme.html">dash_component_template</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modules.html">dash_component_template</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../modules.html">API references</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#module-dash_component_template">dash_component_template Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#module-dash_component_template.idtree">dash_component_template.idtree Module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../modules.html#module-dash_component_template.template">dash_component_template.template Module</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../authors.html">Credits</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../history.html">History</a></li>
@@ -260,6 +266,10 @@ way:</p>
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../modules.html">API references</a><ul>
+      <li>Previous: <a href="dash_component_template.template.WrappedComponent.html" title="previous chapter">WrappedComponent</a></li>
+      <li>Next: <a href="dash_component_template.template.DashComponentInfo.html" title="next chapter">DashComponentInfo</a></li>
+  </ul></li>
   </ul></li>
 </ul>
 </div>

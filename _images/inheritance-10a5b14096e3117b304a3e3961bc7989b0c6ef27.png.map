@@ -1,0 +1,9 @@
+<map id="inheritance01445743d1" name="inheritance01445743d1">
+<area shape="rect" id="node1" title="A mixin class that holds and processes info about Dash components class." alt="" coords="317,5,484,31"/>
+<area shape="rect" id="node2" href="api/dash_component_template.template.ComponentTemplate.html#dash_component_template.template.ComponentTemplate" target="_top" title="A component class for Dash component type." alt="" coords="532,55,677,80"/>
+<area shape="rect" id="node8" href="api/dash_component_template.template.WrappedComponent.html#dash_component_template.template.WrappedComponent" target="_top" title="A thin wrapper round a Dash component instance." alt="" coords="532,5,677,31"/>
+<area shape="rect" id="node3" href="api/dash_component_template.template.Template.html#dash_component_template.template.Template" target="_top" title="An abstract base class that encapsulate layout and callbacks into a" alt="" coords="363,55,439,80"/>
+<area shape="rect" id="node7" href="api/dash_component_template.template.NullComponent.html#dash_component_template.template.NullComponent" target="_top" title="A component template that does not represent an actual component." alt="" coords="548,104,661,129"/>
+<area shape="rect" id="node4" href="api/dash_component_template.template.DashComponentInfo.html#dash_component_template.template.DashComponentInfo" target="_top" title="A class to hold Dash component class related info." alt="" coords="5,5,149,31"/>
+<area shape="rect" id="node5" href="api/dash_component_template.idtree.IdTree.html#dash_component_template.idtree.IdTree" target="_top" title="A class for managing a tree of instances with unique ids." alt="" coords="197,55,269,80"/>
+</map>
