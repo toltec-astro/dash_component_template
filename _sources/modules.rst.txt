@@ -1,0 +1,7 @@
+dash_component_template
+=======================
+
+.. toctree::
+   :maxdepth: 4
+
+   dash_component_template

@@ -1,0 +1,198 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>NullComponent &#8212; Dash Component Template 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="nullcomponent">
+<h1>NullComponent<a class="headerlink" href="#nullcomponent" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="dash_component_template.template.NullComponent">
+<em class="property">class </em><code class="descclassname">dash_component_template.template.</code><code class="descname">NullComponent</code><span class="sig-paren">(</span><em>id</em>, <em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/dash_component_template/template.html#NullComponent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dash_component_template.template.NullComponent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../dash_component_template.html#dash_component_template.template.Template" title="dash_component_template.template.Template"><code class="xref py py-class docutils literal notranslate"><span class="pre">dash_component_template.template.Template</span></code></a></p>
+<p>A component template that does not represent an actual component.</p>
+<p>This is useful to serve as a root to build standalone layout that does not
+attached immediately to the main Dash app layout tree.</p>
+<p class="rubric">Attributes Summary</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="../dash_component_template.html#dash_component_template.template.NullComponent.id" title="dash_component_template.template.NullComponent.id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id</span></code></a></td>
+<td>The unique id.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../dash_component_template.html#dash_component_template.template.NullComponent.idbase" title="dash_component_template.template.NullComponent.idbase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">idbase</span></code></a></td>
+<td>The base name to use for generated unique id.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../dash_component_template.html#dash_component_template.template.NullComponent.layout" title="dash_component_template.template.NullComponent.layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">layout</span></code></a></td>
+<td>Implement this to return a valid Dash layout object.</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods Summary</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="../dash_component_template.html#dash_component_template.template.NullComponent.setup_layout" title="dash_component_template.template.NullComponent.setup_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setup_layout</span></code></a>(app)</td>
+<td>Implement this to declare layout components and their callbacks.</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes Documentation</p>
+<dl class="attribute">
+<dt id="dash_component_template.template.NullComponent.id">
+<code class="descname">id</code><a class="headerlink" href="#dash_component_template.template.NullComponent.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>The unique id.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="dash_component_template.template.NullComponent.idbase">
+<code class="descname">idbase</code><a class="headerlink" href="#dash_component_template.template.NullComponent.idbase" title="Permalink to this definition">¶</a></dt>
+<dd><p>The base name to use for generated unique id.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="dash_component_template.template.NullComponent.layout">
+<code class="descname">layout</code><a class="headerlink" href="#dash_component_template.template.NullComponent.layout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implement this to return a valid Dash layout object.</p>
+</dd></dl>
+
+<p class="rubric">Methods Documentation</p>
+<dl class="method">
+<dt id="dash_component_template.template.NullComponent.setup_layout">
+<code class="descname">setup_layout</code><span class="sig-paren">(</span><em>app</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/dash_component_template/template.html#NullComponent.setup_layout"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dash_component_template.template.NullComponent.setup_layout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implement this to declare layout components and their callbacks.</p>
+<p>This base implementation has to be called in the subclass
+implementation to ensure any child templates also get properly setup.
+This is particularly important for templates that contain templates in
+their descendants.</p>
+<p>The convention is to structure the implementation in the following
+way:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">setup_layout</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">app</span><span class="p">):</span>
+    <span class="n">child0</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">child</span><span class="p">(</span><span class="n">some_dash_type</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+    <span class="n">child1</span> <span class="o">=</span> <span class="n">child0</span><span class="o">.</span><span class="n">child</span><span class="p">(</span><span class="n">some_template_cls</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+    <span class="c1"># This will trigger `setup_layout` call to all the children,</span>
+    <span class="c1"># which may make available some attributes</span>
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">setup_layout</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+
+    <span class="nd">@app</span><span class="o">.</span><span class="n">callback</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">some_callback</span><span class="p">(</span><span class="o">...</span><span class="p">):</span>
+        <span class="k">return</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Dash Component Template</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">dash_component_template</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">dash_component_template</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Zhiyuan Ma.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/api/dash_component_template.template.NullComponent.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

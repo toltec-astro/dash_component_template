@@ -1,0 +1,7 @@
+=====
+Usage
+=====
+
+To use dash_component_template in a project::
+
+    import dash_component_template
