@@ -30,7 +30,7 @@ jobs:
           - name: Python 3.8 with all optional dependencies
             os: ubuntu-latest
             python: 3.8
-            toxenv: py38
+            toxenv: py38-cov
 
           - name: OS X - Python 3.8 with all optional dependencies
             os: macos-latest
@@ -58,9 +58,8 @@ jobs:
     - name: Test with tox
       run: |
         tox -e ${{ matrix.toxenv }}
-    # This is an example of how to upload coverage to codecov
-    # - name: Upload coverage to codecov
-    #   if: "contains(matrix.toxenv, '-cov')"
-    #   uses: codecov/codecov-action@v1
-    #   with:
-    #     file: ./coverage.xml
+    - name: Upload coverage to codecov
+      if: "contains(matrix.toxenv, '-cov')"
+      uses: codecov/codecov-action@v1
+      with:
+        file: ./coverage.xml
