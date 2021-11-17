@@ -152,6 +152,11 @@ class Template(IdTree):
     def grid(self, nrows, ncols, squeeze=True):
         """Return a dash bootstrap component grid.
 
+        .. note::
+
+            User is responsible to create a wrapping container for the
+            rows and cols to behave as expected.
+
         Parameters
         ----------
         nrows : int
@@ -166,11 +171,12 @@ class Template(IdTree):
         # if not, a container object needs to be created to make
         # the grid functional correctly, per the documentation of dbc.
         result = np.full((nrows, ncols), None, dtype=object)
-        if hasattr(self, 'dash_component_info') and (
-                self.dash_component_info.type is dbc.Container):
-            container = self
-        else:
-            container = self.child(dbc.Container, fluid=True)
+        container = self
+        # if hasattr(self, 'dash_component_info') and (
+        #         self.dash_component_info.type is dbc.Container):
+        #     container = self
+        # else:
+        #     container = self.child(dbc.Container, fluid=True)
         current_row = None
         for i in range(nrows):
             for j in range(ncols):
