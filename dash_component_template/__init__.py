@@ -2,7 +2,7 @@
 
 __author__ = """Zhiyuan Ma"""
 __email__ = 'zhiyuanma@umass.edu'
-__version__ = '0.1.0'
+__version__ = '0.2.0'
 
 from .template import (
     ComponentTemplate, WrappedComponent, NullComponent)
