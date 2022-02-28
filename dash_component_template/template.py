@@ -187,6 +187,72 @@ class Template(IdTree):
             result = np.squeeze(result)
         return result
 
+    def colgrid(
+            self, nrows, ncols, squeeze=True, gx=None, gy=None,
+            width_ratios=None):
+        """Return a dash bootstrap component grid, with only cols.
+
+        .. note::
+
+            User is responsible to create a wrapping container for the
+            cols to behave as expected. A row is created to hold all the
+            columns.
+
+        Parameters
+        ----------
+        nrows : int
+            The number of rows.
+        ncols : int
+            The number of cols per row.
+        squeeze : bool, optional
+            If True, insignificant dimensions are removed from the returned
+            array.
+        gx : int, optional
+            The horizontal gutter.
+        gy : int, optional
+            The vertical gutter.
+        width_ratios : array-like of length ncols, optional
+            The relative widths of the columns. Each column gets a relative
+            width of width_ratios[i] / sum(width_ratios). If not given, all
+            columns will have the same width.
+        """
+        # make sure ncols are factors of 12
+        if ncols > 12 or 12 % ncols != 0:
+            raise ValueError("ncols has to be integer division of 12.")
+        result = np.full((nrows, ncols), None, dtype=object)
+        if width_ratios is None:
+            colwidth = np.full(result.shape, 12 // ncols)
+        else:
+            width_ratios = np.asanyarray(width_ratios)
+            if width_ratios.shape != (ncols, ):
+                raise ValueError(
+                    f"width_ratios shape {width_ratios.shape} "
+                    f"does not match ncols {ncols} ")
+            # scale the width_ratios to make it sum to 12
+            # and round to int
+            width_ratios = np.round(
+                width_ratios * (12 / np.sum(width_ratios))).astype(int)
+            # check they sum to 12
+            if np.sum(width_ratios) != 12:
+                raise ValueError(
+                    f"unable to calculate widths for cols "
+                    f"with ratios {width_ratios}.")
+            colwidth = np.tile(width_ratios, (nrows, 1))
+
+        container = self
+        row_className = list()
+        if gx is not None:
+            row_className.append(f'gx-{gx}')
+        if gy is not None:
+            row_className.append(f'gy-{gy}')
+        row = container.child(dbc.Row, className=' '.join(row_className))
+        for i in range(nrows):
+            for j in range(ncols):
+                result[i, j] = row.child(dbc.Col, width=colwidth[i, j])
+        if squeeze:
+            result = np.squeeze(result)
+        return result
+
 
 class NullComponent(Template):
     """A component template that does not represent an actual component.
