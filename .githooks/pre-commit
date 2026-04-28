@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Portable pre-commit hook - works in any environment where uv is available.
+# Uses `uv run` so no hardcoded Python/virtualenv paths are needed.
+# Set as the active hook dir with: git config core.hooksPath .githooks
+
+exec uv run pre-commit run --hook-stage pre-commit --color always "$@"

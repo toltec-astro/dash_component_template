@@ -1,0 +1,21 @@
+{
+  "template": "https://github.com/Jerry-Ma/cookiecutter-pypackage.git",
+  "commit": "48f3ca3dd5fd0ad2329e1777bcda66092f2e939d",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "full_name": "Zhiyuan Ma",
+      "email": "zhiyuanma@umass.edu",
+      "github_username": "toltec-astro",
+      "pypi_package_name": "dash_component_template",
+      "project_name": "dash_component_template",
+      "project_slug": "dash_component_template",
+      "project_short_description": "A framework to create reusable Dash layout.",
+      "pypi_username": "toltec-astro",
+      "__gh_slug": "toltec-astro/dash_component_template",
+      "_template": "https://github.com/Jerry-Ma/cookiecutter-pypackage.git",
+      "_commit": "48f3ca3dd5fd0ad2329e1777bcda66092f2e939d"
+    }
+  },
+  "directory": null
+}

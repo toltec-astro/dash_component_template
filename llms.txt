@@ -1,0 +1,16 @@
+# dash_component_template
+
+> A framework to create reusable Dash layout.
+
+## Documentation
+
+- [README](README.md): Quick start guide, installation, and basic usage
+- [Project Configuration](pyproject.toml): Package metadata, dependencies, and tool configuration
+
+## Core API
+
+- [Package](src/dash_component_template/__init__.py): Main package exports
+
+## Development
+
+- [Justfile](justfile): Task automation for development, testing, and quality assurance
