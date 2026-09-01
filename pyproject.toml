@@ -87,9 +87,6 @@ where = ["src"]
   "data/*/*/*/*/*/*",
 ]
 
-[tool.setuptools_scm]
-version_file = "src/dash_component_template/_version.py"
-
 [tool.pytest.ini_options]
 minversion = "9.0"
 testpaths = ["tests", "docs"]
@@ -130,7 +127,6 @@ exclude = [
 [tool.ruff]
 line-length = 88
 exclude = [
-  "src/dash_component_template/_version.py",
   "src/dash_component_template/stubs",
 ]
 lint.future-annotations = true
@@ -222,7 +218,7 @@ convention = "numpy"
 branch = true
 parallel = true
 source = ["src/dash_component_template"]
-omit = ["*/tests/*", "*/test_*", "*/_version.py", "*/conftest.py"]
+omit = ["*/tests/*", "*/test_*", "*/conftest.py"]
 
 [tool.coverage.report]
 show_missing = true
